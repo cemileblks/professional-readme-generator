@@ -15,7 +15,13 @@ const questions = [
     {
         type: 'input',
         name: 'description',
-        message: 'Provide a short description explaining your project:'
+        message: 'Provide a short description explaining your project:',
+        validate: (answer) => {
+            if (answer === "") {
+                return console.log("Enter a valid project description");
+            }
+            return true;
+        }
     },
     {
         type: 'input',
@@ -25,13 +31,19 @@ const questions = [
     {
         type: 'input',
         name: 'usage',
-        message: 'How should users use your application?'
+        message: 'How should users use your application?',
+        validate: (answer) => {
+            if (answer === "") {
+                return console.log("Enter valid usage instructions");
+            }
+            return true;
+        }
     },
     {
         type: 'input',
         name: 'credits',
         message: 'Do you want to provide credits for any contributors or third-party resources?(Click enter if None)',
-        default: "N/A",
+        default: () => "N/A",
     },
     {
         type: 'list',
@@ -59,12 +71,24 @@ const questions = [
     {
         type: 'input',
         name: 'github',
-        message: 'What is your GitHub username?'
+        message: 'What is your GitHub username?',
+        validate: (answer) => {
+            if (answer === "") {
+                return console.log("Enter a valid GitHub username");
+            }
+            return true;
+        }
     },
     {
         type: 'input',
         name: 'email',
-        message: 'What is your email address?'
+        message: 'What is your email address?',
+        validate: (answer) => {
+            if (answer === "") {
+                return console.log("Enter a valid email address");
+            }
+            return true;
+        }
     }
 ]
 
