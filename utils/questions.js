@@ -50,12 +50,13 @@ const questions = [
         name: 'license',
         message: 'Choose a license for your application:',
         choices: [
-            'MIT',
-            'Apache-2.0',
-            'GPL-3.0',
-            'BSD-3-Clause',
-            'CC0-1.0',
-            'LGPL-3.0',
+            'MIT License',
+            'Apache 2.0 License',
+            'GNU General Public License (GPL) v3.0',
+            'BSD 3-Clause License',
+            'Creative Commons Zero v1.0 Universal',
+            'Mozilla Public License 2.0',
+            'The Unlicense'
         ]
     },
     {

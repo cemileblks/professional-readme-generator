@@ -6,6 +6,8 @@ function generateMarkdown(data) {
   ## Description
   ${data.description}
 
+  ${data.licenseBadge}
+
   ## Table of contents
   - [Installation](#installation)
   - [Usage](#usage)
@@ -25,7 +27,7 @@ function generateMarkdown(data) {
   ${data.credits}
 
   ## License
-  This project is licensed under the ${data.license} License. Please refer to the LICENSE in the repo.
+  This project is licensed under the ${data.licenseBadge}. Please refer to the LICENSE in the repo.
 
   ## How to Contribute
   ${data.contributing}

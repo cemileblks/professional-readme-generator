@@ -3,6 +3,7 @@ const path = require('path');
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
 const questions = require("./utils/questions")
+const generateBadges = require("./utils/generateBadges")
 
 
 // function to write README file
@@ -14,6 +15,7 @@ function init() {
     inquirer
         .prompt(questions)
         .then((answers) => {
+            answers.licenseBadge = generateBadges(answers.license)
             const readmeContent = generateMarkdown(answers)
             console.log("User responses:", answers);
         })
