@@ -10,8 +10,56 @@ const questions = [
             }
             return true;
 
+        }
+    },
+    {
+        type: 'input',
+        name: 'description',
+        message: 'Provide a short description explaining your project:'
+    },
+    {
+        type: 'input',
+        name: 'installation',
+        message: 'How can users install your project?'
+    },
+    {
+        type: 'input',
+        name: 'usage',
+        message: 'How should users use your application?'
+    },
+    {
+        type: 'list',
+        name: 'license',
+        message: 'Choose a license for your application:',
+        choices: [
+            'MIT',
+            'Apache-2.0',
+            'GPL-3.0',
+            'BSD-3-Clause',
+            'CC0-1.0',
+            'LGPL-3.0',
+        ]
+    },
+    {
+        type: 'input',
+        name: 'contributing',
+        message: 'How can others contribute to your project?'
+    },
+    {
+        type: 'input',
+        name: 'tests',
+        message: 'Do you have any tests for your application? How can users run them?'
+    },
+    {
+        type: 'input',
+        name: 'githubUsername',
+        message: 'What is your GitHub username?'
+    },
+    {
+        type: 'input',
+        name: 'email',
+        message: 'What is your email address?'
     }
-}
 ]
 
 module.exports = questions;
