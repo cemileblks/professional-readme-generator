@@ -1,7 +1,7 @@
 # Professional README Generator
 
 ## Description
-A README generator that can quickly create a professional README for a new project!
+This is a A command-line application that aims to generate professional README.md files based on user input using the [Inquirer.js](https://www.npmjs.com/package/inquirer) package to generate the prompts. It is built in Node.js and uses ES6 syntax.
 
 ## Table of Contents
 - [Installation](#installation)
