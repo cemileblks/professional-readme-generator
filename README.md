@@ -20,7 +20,8 @@ To start using the application, run the command `node index.js`. This will promp
 View a walkthrough video of the application [here](/).
 
 Screenshot showcasing the application and its functionality:
-![Application Screenshot](.assets/images/screenshot)
+
+![Application Screenshot](./assets/images/screenshot.png)
 
 Here is an example of the generated [README.md](/generated-files/README.md).
 
