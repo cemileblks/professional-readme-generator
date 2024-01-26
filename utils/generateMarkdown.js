@@ -3,10 +3,10 @@ function generateMarkdown(data) {
   return `
   # ${data.title}
 
+  ${data.licenseBadge}
+
   ## Description
   ${data.description}
-
-  ${data.licenseBadge}
 
   ## Table of contents
   - [Installation](#installation)
@@ -27,7 +27,9 @@ function generateMarkdown(data) {
   ${data.credits}
 
   ## License
-  This project is licensed under the ${data.licenseBadge}. Please refer to the LICENSE in the repo.
+  This project is licensed under:
+  
+  ${data.licenseBadge}
 
   ## How to Contribute
   ${data.contributing}

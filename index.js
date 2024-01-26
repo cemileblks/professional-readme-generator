@@ -8,6 +8,8 @@ const generateBadges = require("./utils/generateBadges")
 
 // function to write README file
 function writeToFile(fileName, data) {
+    fs.writeFile(`./generated-files/${fileName}`, data, (err) =>
+    err ? console.log(err) : console.log('File successfully generated!'))
 }
 
 // function to initialize program
@@ -17,7 +19,8 @@ function init() {
         .then((answers) => {
             answers.licenseBadge = generateBadges(answers.license)
             const readmeContent = generateMarkdown(answers)
-            console.log("User responses:", answers);
+            writeToFile("README.md", readmeContent);
+            console.log("Generating README...");
         })
         .catch((error) => {
             if (error.isTtyError) {
