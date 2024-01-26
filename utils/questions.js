@@ -28,6 +28,12 @@ const questions = [
         message: 'How should users use your application?'
     },
     {
+        type: 'input',
+        name: 'credits',
+        message: 'Do you want to provide credits for any contributors or third-party resources?(Click enter if None)',
+        default: "N/A",
+    },
+    {
         type: 'list',
         name: 'license',
         message: 'Choose a license for your application:',
@@ -52,7 +58,7 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'githubUsername',
+        name: 'github',
         message: 'What is your GitHub username?'
     },
     {
